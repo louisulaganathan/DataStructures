@@ -35,11 +35,19 @@ Memory representations
         a[pos-1] = num;
         ```
     * 2-D
+      
         |-|C1|c2|c3|
         |-|--|--|--|
         |R1|1|2|3|
         |R2|4|5|6|
         |R3|7|8|9|
+        
+    Memory Representation[single dimention since the memory is an tap which contain sequential bytes]:
+    
+    |..||||||||||||..|
+    |--|-|-|-|-|-|-|-|-|-|-|-|--|
+    |--|1|2|3|4|5|6|7|8|9|-|-|--|
+    
          * Row major representation [default] int[] a[2][2] = { {a[0][0],a[0][1]},{a[1][0],a[1][1]}}; =>{1,2,3,4,5,6,7,8,9}=> {{1,2,3},{4,5,6},{7,8,9}};
          * Column major representation a[3][3] ={{1,4,7},{2,5,8},{3,6,9}};
 
